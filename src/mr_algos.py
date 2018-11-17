@@ -20,7 +20,8 @@ Metamorphic Relations:
     2. For all algorithms, adding a single edge cannot make the number
        of items in the solution less (in the case of DFS and BFS, this
        is the number of nodes, traversed to find the target, for the
-       MST algorithms this is the combined edge weight)
+       MST algorithms this is the combined edge weight). For the case
+       of the MST algos, the followup must be exactly one edge longer.
     3. For a complete graph, removing an edge should not make the
        solution for DFS and BFS longer, or the MST algos smaller.
 """
@@ -182,13 +183,29 @@ class TestMR3(unittest.TestCase):
             self.followup[i].remove_edge(edge_one[0], edge_one[1])
 
     def test_dfs(self):
-        pass
+        for i in range(0, len(self.primary)):
+            primary = list(nx.dfs_edges(self.primary[i], source=0))
+            followup = list(nx.dfs_edges(self.followup[i], source=0))
+            self.assertLessEqual(len(list(followup)), len(list(primary)))
 
     def test_bfs(self):
-        pass
+        for i in range(0, len(self.primary)):
+            primary = list(nx.bfs_edges(self.primary[i], source=0))
+            followup = list(nx.bfs_edges(self.followup[i], source=0))
+            self.assertLessEqual(len(list(followup)), len(list(primary)))
 
     def test_prim(self):
-        pass
+        for i in range(0, len(self.primary)):
+            primary = nx.algorithms.tree.minimum_spanning_edges(
+                self.primary[i], algorithm='prim', data=False)
+            followup = nx.algorithms.tree.minimum_spanning_edges(
+                self.followup[i], algorithm='prim', data=False)
+            self.assertGreaterEqual(len(list(followup)), len(list(primary)))
 
     def test__kruskal(self):
-        pass
+        for i in range(0, len(self.primary)):
+            primary = nx.algorithms.tree.minimum_spanning_edges(
+                self.primary[i], algorithm='kruskal', data=False)
+            followup = nx.algorithms.tree.minimum_spanning_edges(
+                self.followup[i], algorithm='kruskal', data=False)
+            self.assertGreaterEqual(len(list(followup)), len(list(primary)))
