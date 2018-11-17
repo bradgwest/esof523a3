@@ -12,7 +12,8 @@ For each algorithm, metamorphic relations are developed and tested using the pyt
 unittest library.
 
 Metamorphic Relations:
-    1. For all algorithms, reversing the edge directions should not change the output
+    1. For all algorithms, adding the same edges in reverse cannot make the solution
+       longer (because we have a more connected graph)
     2. For all algorithms, adding an edge cannot make the number of items in the
        solution less (in the case of DFS and BFS, this is the number of nodes,
        traversed to find the target, for the MST algorithms this is the combined
@@ -23,27 +24,71 @@ Metamorphic Relations:
 
 import unittest
 import networkx as nx
-import matplotlib.pyplot as plt
+from random import randint, seed
+import copy
 
 class TestMR1(unittest.TestCase):
 
+    def add_random_edge_weights(self, graph):
+        wt_range = (1, 100)
+        for edge in list(graph.edges):
+            wt = randint(wt_range[0], wt_range[1])
+            graph.add_edge(edge[0], edge[1], {"weight": wt})
+
+    def add_reverse_edges(self, graph):
+        for edge in list(graph.edges):
+            graph.add_edge(edge[1], edge[0], edge[3])
+
     def setUp(self):
-        self.g_forward = nx.DiGraph()
-        self.g_backward = nx.DiGraph()
-        pass
+        """
+        Generate random sized directed graphs. Size varies from 2 to 1000
+        :return:
+        """
+        seed(23)
+        n_node_range = (2, 1000)
+        n_graphs = 50
+        self.primary = [None for _ in range(0, n_graphs)]
+        self.followup = [None for _ in range(0, n_graphs)]
+        for i in range(0, n_graphs):
+            n_nodes = randint(n_node_range[0], n_node_range[1])
+            self.primary[i] = nx.generators.directed.gn_graph(n_nodes)
+            self.add_random_edge_weights(self.primary[i])
+            self.followup[i] = copy.deepcopy(self.primary[i])
+            self.add_reverse_edges(self.followup[i])
+
 
     def test_dfs(self):
-        # Run dfs primary, reverse edge directions, run dfs secondary, assert that output is the same
-        pass
+        """
+        Run DFS and verify that in and out answer is the same.
+
+        :return:
+        """
+        for i in range(0, len(self.primary)):
+            primary = list(nx.dfs_edges(self.primary[i], source=0))
+            followup = list(nx.dfs_edges(self.followup[i]), source=0)
+            self.assertGreaterEqual(followup, primary)
 
     def test_bfs(self):
-        pass
+        for i in range(0, len(self.primary)):
+            primary = list(nx.bfs_edges(self.primary[i], source=0))
+            followup = list(nx.bfs_edges(self.followup[i]), source=0)
+            self.assertGreaterEqual(len(followup), len(primary))
 
     def test_prim(self):
-        pass
+        for i in range(0, len(self.primary)):
+            primary = nx.algorithms.tree.minimum_spanning_edges(
+                self.primary[i], algorithm='prim', data=False)
+            followup = nx.algorithms.tree.minimum_spanning_edges(
+                self.followup[i], algorithm='prim', data=False)
+            self.assertGreaterEqual(len(followup), len(primary))
 
     def test__kruskal(self):
-        pass
+        for i in range(0, len(self.primary)):
+            primary = nx.algorithms.tree.minimum_spanning_edges(
+                self.primary[i], algorithm='kruskal', data=False)
+            followup = nx.algorithms.tree.minimum_spanning_edges(
+                self.followup[i], algorithm='kruskal', data=False)
+            self.assertGreaterEqual(len(followup), len(primary))
 
 
 class TestMR2(unittest.TestCase):
