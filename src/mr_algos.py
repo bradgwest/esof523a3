@@ -14,7 +14,7 @@ unittest library.
 Metamorphic Relations:
     1. For all algorithms, adding the same edges in reverse cannot make the solution
        longer for MST, and cannot make the solution shorter for DFS and BFS.
-    2. For all algorithms, adding an edge cannot make the number of items in the
+    2. For all algorithms, adding a single edge cannot make the number of items in the
        solution less (in the case of DFS and BFS, this is the number of nodes,
        traversed to find the target, for the MST algorithms this is the combined
        edge weight)
@@ -27,13 +27,15 @@ import networkx as nx
 from random import randint, seed
 import copy
 
-class TestMR1(unittest.TestCase):
 
-    def add_random_edge_weights(self, graph):
-        wt_range = (1, 100)
-        for edge in list(graph.edges):
-            wt = randint(wt_range[0], wt_range[1])
-            graph.add_edge(edge[0], edge[1], weight=wt)
+def add_random_edge_weights(graph):
+    wt_range = (1, 100)
+    for edge in list(graph.edges):
+        wt = randint(wt_range[0], wt_range[1])
+        graph.add_edge(edge[0], edge[1], weight=wt)
+
+
+class TestMR1(unittest.TestCase):
 
     def add_reverse_edges(self, graph):
         for edge in list(graph.edges):
@@ -54,7 +56,7 @@ class TestMR1(unittest.TestCase):
         for i in range(0, n_graphs):
             n_nodes = randint(n_node_range[0], n_node_range[1])
             self.primary[i] = nx.generators.directed.gn_graph(n_nodes)
-            self.add_random_edge_weights(self.primary[i])
+            add_random_edge_weights(self.primary[i])
             self.followup[i] = copy.deepcopy(self.primary[i])
             self.add_reverse_edges(self.followup[i])
 
@@ -109,20 +111,46 @@ class TestMR1(unittest.TestCase):
 class TestMR2(unittest.TestCase):
 
     def setUp(self):
-        pass
+        seed(23)
+        self.n_node_range = (2, 100)
+        n_graphs = 20
+        self.primary = [None for _ in range(0, n_graphs)]
+        self.followup = [None for _ in range(0, n_graphs)]
+        for i in range(0, n_graphs):
+            n_nodes = randint(self.n_node_range[0], self.n_node_range[1])
+            self.primary[i] = nx.complete_graph(n_nodes)
+            add_random_edge_weights(self.primary[i])
+            self.followup[i] = copy.deepcopy(self.primary[i])
+            # Add edge to node zero. Node is one more than range
+            self.followup[i].add_edge(self.n_node_range[1] + 1, 0, weigth=1)
 
     def test_dfs(self):
-        # Run dfs primary, reverse edge directions, run dfs secondary, assert that output is the same
-        pass
+        for i in range(0, len(self.primary)):
+            primary = list(nx.dfs_edges(self.primary[i], source=0))
+            followup = list(nx.dfs_edges(self.followup[i], source=self.n_node_range[1] + 1))
+            self.assertGreaterEqual(len(list(followup)), len(list(primary)))
 
     def test_bfs(self):
-        pass
+        for i in range(0, len(self.primary)):
+            primary = list(nx.bfs_edges(self.primary[i], source=0))
+            followup = list(nx.bfs_edges(self.followup[i], source=self.n_node_range[1] + 1))
+            self.assertGreaterEqual(len(list(followup)), len(list(primary)))
 
     def test_prim(self):
-        pass
+        for i in range(0, len(self.primary)):
+            primary = nx.algorithms.tree.minimum_spanning_edges(
+                self.primary[i], algorithm='prim', data=False)
+            followup = nx.algorithms.tree.minimum_spanning_edges(
+                self.followup[i], algorithm='prim', data=False)
+            self.assertEqual(len(list(followup)) + 1, len(list(primary)))
 
     def test__kruskal(self):
-        pass
+        for i in range(0, len(self.primary)):
+            primary = nx.algorithms.tree.minimum_spanning_edges(
+                self.primary[i], algorithm='kruskal', data=False)
+            followup = nx.algorithms.tree.minimum_spanning_edges(
+                self.followup[i], algorithm='kruskal', data=False)
+            self.assertEqual(len(list(followup)) + 1, len(list(primary)))
 
 
 class TestMR3(unittest.TestCase):
