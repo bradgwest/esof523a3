@@ -1,25 +1,28 @@
 """
 AUTHOR: Brad West
 ---
-DESCRIPTION: Metamorphic testing of 4 graph algorithms. The algorithms are:
+DESCRIPTION: Metamorphic testing of 4 graph algorithms. The algorithms
+  are:
 
     1. Depth First Search
     2. Breadth First Search
     3. Minimum Spanning Tree (Prim's Algorithm)
     4. Minimum Spanning Tree (Kruskal's Algorithm)
 
-For each algorithm, metamorphic relations are developed and tested using the python
-unittest library.
+For each algorithm, metamorphic relations are developed and tested using
+the python unittest library.
 
 Metamorphic Relations:
-    1. For all algorithms, adding the same edges in reverse cannot make the solution
-       longer for MST, and cannot make the solution shorter for DFS and BFS.
-    2. For all algorithms, adding a single edge cannot make the number of items in the
-       solution less (in the case of DFS and BFS, this is the number of nodes,
-       traversed to find the target, for the MST algorithms this is the combined
-       edge weight)
-    3. For a complete graph, removing an edge should not make the solution for DFS and
-       BFS longer, or the MST algos smaller.
+    1. For all algorithms, adding the same edges in reverse cannot make
+       the solution longer for MST, and cannot make the solution shorter
+       for DFS and BFS (solutions being the edges traversed for the
+       traversals and edges composing the MST)
+    2. For all algorithms, adding a single edge cannot make the number
+       of items in the solution less (in the case of DFS and BFS, this
+       is the number of nodes, traversed to find the target, for the
+       MST algorithms this is the combined edge weight)
+    3. For a complete graph, removing an edge should not make the
+       solution for DFS and BFS longer, or the MST algos smaller.
 """
 
 import unittest
@@ -45,7 +48,8 @@ class TestMR1(unittest.TestCase):
 
     def setUp(self):
         """
-        Generate random sized directed graphs. Size varies from 2 to 1000
+        Generate random sized directed graphs. Size varies from 2 to
+        1000
         :return:
         """
         seed(23)
@@ -63,20 +67,21 @@ class TestMR1(unittest.TestCase):
 
     def test_dfs(self):
         """
-        Run DFS and verify that the list of edges returned for the followup
-        case is not longer than the primary case.
+        Run DFS and verify that the list of edges returned for the
+        followup case is not longer than the primary case.
 
         :return:
         """
         for i in range(0, len(self.primary)):
-            src = list(self.primary[i].out_edges)[0][0] # Choose a node that has at least degree one
+            # Choose a node that has at least degree one
+            src = list(self.primary[i].out_edges)[0][0]
             primary = list(nx.dfs_edges(self.primary[i], source=src))
             followup = list(nx.dfs_edges(self.followup[i], source=src))
             self.assertGreaterEqual(len(list(followup)), len(list(primary)))
 
     def test_bfs(self):
         for i in range(0, len(self.primary)):
-            src = list(self.primary[i].out_edges)[0][0] # Choose a node that has at least degree one
+            src = list(self.primary[i].out_edges)[0][0]
             primary = list(nx.bfs_edges(self.primary[i], source=src))
             followup = list(nx.bfs_edges(self.followup[i], source=src))
             self.assertGreaterEqual(len(list(followup)), len(list(primary)))
@@ -102,9 +107,13 @@ class TestMR1(unittest.TestCase):
         """
         for i in range(0, len(self.primary)):
             primary = nx.algorithms.tree.minimum_spanning_edges(
-                self.primary[i].to_undirected(), algorithm='kruskal', data=False)
+                self.primary[i].to_undirected(),
+                algorithm='kruskal',
+                data=False)
             followup = nx.algorithms.tree.minimum_spanning_edges(
-                self.followup[i].to_undirected(), algorithm='kruskal', data=False)
+                self.followup[i].to_undirected(),
+                algorithm='kruskal',
+                data=False)
             self.assertGreaterEqual(len(list(primary)), len(list(followup)))
 
 
@@ -127,13 +136,15 @@ class TestMR2(unittest.TestCase):
     def test_dfs(self):
         for i in range(0, len(self.primary)):
             primary = list(nx.dfs_edges(self.primary[i], source=0))
-            followup = list(nx.dfs_edges(self.followup[i], source=self.n_node_range[1] + 1))
+            followup = list(nx.dfs_edges(self.followup[i],
+                                         source=self.n_node_range[1] + 1))
             self.assertGreaterEqual(len(list(followup)), len(list(primary)))
 
     def test_bfs(self):
         for i in range(0, len(self.primary)):
             primary = list(nx.bfs_edges(self.primary[i], source=0))
-            followup = list(nx.bfs_edges(self.followup[i], source=self.n_node_range[1] + 1))
+            followup = list(nx.bfs_edges(self.followup[i],
+                                         source=self.n_node_range[1] + 1))
             self.assertGreaterEqual(len(list(followup)), len(list(primary)))
 
     def test_prim(self):
@@ -156,10 +167,21 @@ class TestMR2(unittest.TestCase):
 class TestMR3(unittest.TestCase):
 
     def setUp(self):
-        pass
+        seed(23)
+        self.n_node_range = (2, 100)
+        n_graphs = 20
+        self.primary = [None for _ in range(0, n_graphs)]
+        self.followup = [None for _ in range(0, n_graphs)]
+        for i in range(0, n_graphs):
+            n_nodes = randint(self.n_node_range[0], self.n_node_range[1])
+            self.primary[i] = nx.complete_graph(n_nodes)
+            add_random_edge_weights(self.primary[i])
+            self.followup[i] = copy.deepcopy(self.primary[i])
+            # Remove the first edge
+            edge_one = list(self.followup[i].edges)[0]
+            self.followup[i].remove_edge(edge_one[0], edge_one[1])
 
     def test_dfs(self):
-        # Run dfs primary, reverse edge directions, run dfs secondary, assert that output is the same
         pass
 
     def test_bfs(self):
