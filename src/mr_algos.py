@@ -13,7 +13,7 @@ unittest library.
 
 Metamorphic Relations:
     1. For all algorithms, adding the same edges in reverse cannot make the solution
-       longer (because we have a more connected graph)
+       longer for MST, and cannot make the solution shorter for DFS and BFS.
     2. For all algorithms, adding an edge cannot make the number of items in the
        solution less (in the case of DFS and BFS, this is the number of nodes,
        traversed to find the target, for the MST algorithms this is the combined
@@ -33,11 +33,13 @@ class TestMR1(unittest.TestCase):
         wt_range = (1, 100)
         for edge in list(graph.edges):
             wt = randint(wt_range[0], wt_range[1])
-            graph.add_edge(edge[0], edge[1], {"weight": wt})
+            graph.add_edge(edge[0], edge[1], weight=wt)
 
     def add_reverse_edges(self, graph):
         for edge in list(graph.edges):
-            graph.add_edge(edge[1], edge[0], edge[3])
+            graph.add_edge(
+                edge[1], edge[0],
+                weight=graph.get_edge_data(edge[0], edge[1])["weight"])
 
     def setUp(self):
         """
@@ -45,8 +47,8 @@ class TestMR1(unittest.TestCase):
         :return:
         """
         seed(23)
-        n_node_range = (2, 1000)
-        n_graphs = 50
+        n_node_range = (2, 100)
+        n_graphs = 20
         self.primary = [None for _ in range(0, n_graphs)]
         self.followup = [None for _ in range(0, n_graphs)]
         for i in range(0, n_graphs):
@@ -59,36 +61,49 @@ class TestMR1(unittest.TestCase):
 
     def test_dfs(self):
         """
-        Run DFS and verify that in and out answer is the same.
+        Run DFS and verify that the list of edges returned for the followup
+        case is not longer than the primary case.
 
         :return:
         """
         for i in range(0, len(self.primary)):
-            primary = list(nx.dfs_edges(self.primary[i], source=0))
-            followup = list(nx.dfs_edges(self.followup[i]), source=0)
-            self.assertGreaterEqual(followup, primary)
+            src = list(self.primary[i].out_edges)[0][0] # Choose a node that has at least degree one
+            primary = list(nx.dfs_edges(self.primary[i], source=src))
+            followup = list(nx.dfs_edges(self.followup[i], source=src))
+            self.assertGreaterEqual(len(list(followup)), len(list(primary)))
 
     def test_bfs(self):
         for i in range(0, len(self.primary)):
-            primary = list(nx.bfs_edges(self.primary[i], source=0))
-            followup = list(nx.bfs_edges(self.followup[i]), source=0)
-            self.assertGreaterEqual(len(followup), len(primary))
+            src = list(self.primary[i].out_edges)[0][0] # Choose a node that has at least degree one
+            primary = list(nx.bfs_edges(self.primary[i], source=src))
+            followup = list(nx.bfs_edges(self.followup[i], source=src))
+            self.assertGreaterEqual(len(list(followup)), len(list(primary)))
 
     def test_prim(self):
+        """
+        MST does not work for undirected graph
+
+        :return:
+        """
         for i in range(0, len(self.primary)):
             primary = nx.algorithms.tree.minimum_spanning_edges(
-                self.primary[i], algorithm='prim', data=False)
+                self.primary[i].to_undirected(), algorithm='prim', data=False)
             followup = nx.algorithms.tree.minimum_spanning_edges(
-                self.followup[i], algorithm='prim', data=False)
-            self.assertGreaterEqual(len(followup), len(primary))
+                self.followup[i].to_undirected(), algorithm='prim', data=False)
+            self.assertGreaterEqual(len(list(primary)), len(list(followup)))
 
     def test__kruskal(self):
+        """
+        Must make the graph undirected, first
+
+        :return:
+        """
         for i in range(0, len(self.primary)):
             primary = nx.algorithms.tree.minimum_spanning_edges(
-                self.primary[i], algorithm='kruskal', data=False)
+                self.primary[i].to_undirected(), algorithm='kruskal', data=False)
             followup = nx.algorithms.tree.minimum_spanning_edges(
-                self.followup[i], algorithm='kruskal', data=False)
-            self.assertGreaterEqual(len(followup), len(primary))
+                self.followup[i].to_undirected(), algorithm='kruskal', data=False)
+            self.assertGreaterEqual(len(list(primary)), len(list(followup)))
 
 
 class TestMR2(unittest.TestCase):
