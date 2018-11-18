@@ -154,7 +154,9 @@ class TestMR2(unittest.TestCase):
                 self.primary[i], algorithm='prim', data=False)
             followup = nx.algorithms.tree.minimum_spanning_edges(
                 self.followup[i], algorithm='prim', data=False)
-            self.assertEqual(len(list(followup)) + 1, len(list(primary)))
+            plst = list(followup)
+            flst = list(primary)
+            self.assertEqual((len(flst) + 1), len(plst))
 
     def test__kruskal(self):
         for i in range(0, len(self.primary)):
@@ -162,7 +164,9 @@ class TestMR2(unittest.TestCase):
                 self.primary[i], algorithm='kruskal', data=False)
             followup = nx.algorithms.tree.minimum_spanning_edges(
                 self.followup[i], algorithm='kruskal', data=False)
-            self.assertEqual(len(list(followup)) + 1, len(list(primary)))
+            plst = list(followup)
+            flst = list(primary)
+            self.assertEqual((len(flst) + 1), len(plst))
 
 
 class TestMR3(unittest.TestCase):
