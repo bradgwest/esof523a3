@@ -1,0 +1,408 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 0.0
+mutations:
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 129
+    operator: AOD
+  number: 1
+  status: survived
+  tests_run: 12
+  time: 2.8558216094970703
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 146
+    operator: AOD
+  number: 2
+  status: survived
+  tests_run: 12
+  time: 2.9111945629119873
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 161
+    operator: AOD
+  number: 3
+  status: survived
+  tests_run: 12
+  time: 2.886962413787842
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 111
+    operator: AOR
+  number: 4
+  status: survived
+  tests_run: 12
+  time: 2.9021878242492676
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 115
+    operator: AOR
+  number: 5
+  status: survived
+  tests_run: 12
+  time: 2.913572072982788
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 119
+    operator: AOR
+  number: 6
+  status: survived
+  tests_run: 12
+  time: 2.9906742572784424
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 121
+    operator: AOR
+  number: 7
+  status: survived
+  tests_run: 12
+  time: 2.91180682182312
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 129
+    operator: AOR
+  number: 8
+  status: survived
+  tests_run: 12
+  time: 2.857116937637329
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 133
+    operator: AOR
+  number: 9
+  status: survived
+  tests_run: 12
+  time: 2.9230620861053467
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 146
+    operator: AOR
+  number: 10
+  status: survived
+  tests_run: 12
+  time: 2.922948122024536
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 161
+    operator: AOR
+  number: 11
+  status: survived
+  tests_run: 12
+  time: 2.869399070739746
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 96
+    operator: COD
+  number: 12
+  status: survived
+  tests_run: 12
+  time: 2.902266025543213
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 108
+    operator: COD
+  number: 13
+  status: survived
+  tests_run: 12
+  time: 2.8934030532836914
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 147
+    operator: COD
+  number: 14
+  status: survived
+  tests_run: 12
+  time: 2.908780097961426
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 158
+    operator: COD
+  number: 15
+  status: survived
+  tests_run: 12
+  time: 2.9207069873809814
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 96
+    operator: COI
+  number: 16
+  status: survived
+  tests_run: 12
+  time: 2.9125771522521973
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 101
+    operator: COI
+  number: 17
+  status: survived
+  tests_run: 12
+  time: 2.9360272884368896
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 105
+    operator: COI
+  number: 18
+  status: survived
+  tests_run: 12
+  time: 2.7876477241516113
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 108
+    operator: COI
+  number: 19
+  status: survived
+  tests_run: 12
+  time: 2.919595956802368
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 112
+    operator: COI
+  number: 20
+  status: survived
+  tests_run: 12
+  time: 2.939875364303589
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 116
+    operator: COI
+  number: 21
+  status: survived
+  tests_run: 12
+  time: 2.9469408988952637
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 126
+    operator: COI
+  number: 22
+  status: survived
+  tests_run: 12
+  time: 2.969493865966797
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 136
+    operator: COI
+  number: 23
+  status: survived
+  tests_run: 12
+  time: 2.796140193939209
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 145
+    operator: COI
+  number: 24
+  status: survived
+  tests_run: 12
+  time: 2.7864418029785156
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 147
+    operator: COI
+  number: 25
+  status: survived
+  tests_run: 12
+  time: 3.0819787979125977
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 158
+    operator: COI
+  number: 26
+  status: survived
+  tests_run: 12
+  time: 3.1351335048675537
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 161
+    operator: COI
+  number: 27
+  status: survived
+  tests_run: 12
+  time: 3.010939836502075
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 153
+    operator: EHD
+  number: 28
+  status: survived
+  tests_run: 12
+  time: 3.064664125442505
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 153
+    operator: EXS
+  number: 29
+  status: survived
+  tests_run: 12
+  time: 2.813495635986328
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 108
+    operator: LCR
+  number: 30
+  status: survived
+  tests_run: 12
+  time: 2.7937865257263184
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 136
+    operator: LCR
+  number: 31
+  status: survived
+  tests_run: 12
+  time: 2.822324514389038
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 161
+    operator: LCR
+  number: 32
+  status: survived
+  tests_run: 12
+  time: 3.041640520095825
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 108
+    operator: ROR
+  number: 33
+  status: survived
+  tests_run: 12
+  time: 3.0695791244506836
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 112
+    operator: ROR
+  number: 34
+  status: survived
+  tests_run: 12
+  time: 3.0611040592193604
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 116
+    operator: ROR
+  number: 35
+  status: survived
+  tests_run: 12
+  time: 3.0904698371887207
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 161
+    operator: ROR
+  number: 36
+  status: survived
+  tests_run: 12
+  time: 2.836008310317993
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 129
+    operator: SIR
+  number: 37
+  status: survived
+  tests_run: 12
+  time: 2.8491597175598145
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 133
+    operator: SIR
+  number: 38
+  status: survived
+  tests_run: 12
+  time: 2.8205060958862305
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 133
+    operator: SIR
+  number: 39
+  status: survived
+  tests_run: 12
+  time: 2.818948984146118
+number_of_tests: 12
+targets:
+- networkx.algorithms.traversal.edgedfs
+tests:
+- name: tests.test_algos
+  target: null
+  time: 2.881561279296875
+time_stats:
+  create_mutant_module: 0.025223255157470703
+  create_target_ast: 0.0037374496459960938
+  mutate_module: 120.96023964881897
+  run_tests_with_mutant: 120.61131978034973
+total_time: 123.99962377548218

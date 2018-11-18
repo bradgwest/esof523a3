@@ -1,0 +1,1739 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 10.843373493975903
+mutations:
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 129
+    operator: AOD
+  number: 1
+  status: survived
+  tests_run: 12
+  time: 2.8427810668945312
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 146
+    operator: AOD
+  number: 2
+  status: survived
+  tests_run: 12
+  time: 2.8760156631469727
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 161
+    operator: AOD
+  number: 3
+  status: survived
+  tests_run: 12
+  time: 2.8859505653381348
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 111
+    operator: AOR
+  number: 4
+  status: survived
+  tests_run: 12
+  time: 2.9490294456481934
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 115
+    operator: AOR
+  number: 5
+  status: survived
+  tests_run: 12
+  time: 3.5910961627960205
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 119
+    operator: AOR
+  number: 6
+  status: survived
+  tests_run: 12
+  time: 3.0361838340759277
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 121
+    operator: AOR
+  number: 7
+  status: survived
+  tests_run: 12
+  time: 2.9497971534729004
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 129
+    operator: AOR
+  number: 8
+  status: survived
+  tests_run: 12
+  time: 3.227665662765503
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 133
+    operator: AOR
+  number: 9
+  status: survived
+  tests_run: 12
+  time: 3.4236693382263184
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 146
+    operator: AOR
+  number: 10
+  status: survived
+  tests_run: 12
+  time: 3.7829928398132324
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 161
+    operator: AOR
+  number: 11
+  status: survived
+  tests_run: 12
+  time: 3.98345947265625
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 96
+    operator: COD
+  number: 12
+  status: survived
+  tests_run: 12
+  time: 3.610790491104126
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 108
+    operator: COD
+  number: 13
+  status: survived
+  tests_run: 12
+  time: 3.043267250061035
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 147
+    operator: COD
+  number: 14
+  status: survived
+  tests_run: 12
+  time: 3.0122175216674805
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 158
+    operator: COD
+  number: 15
+  status: survived
+  tests_run: 12
+  time: 2.9745094776153564
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 96
+    operator: COI
+  number: 16
+  status: survived
+  tests_run: 12
+  time: 3.2156808376312256
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 101
+    operator: COI
+  number: 17
+  status: survived
+  tests_run: 12
+  time: 3.6439573764801025
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 105
+    operator: COI
+  number: 18
+  status: survived
+  tests_run: 12
+  time: 2.8548190593719482
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 108
+    operator: COI
+  number: 19
+  status: survived
+  tests_run: 12
+  time: 3.1139333248138428
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 112
+    operator: COI
+  number: 20
+  status: survived
+  tests_run: 12
+  time: 3.119550943374634
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 116
+    operator: COI
+  number: 21
+  status: survived
+  tests_run: 12
+  time: 3.0945885181427
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 126
+    operator: COI
+  number: 22
+  status: survived
+  tests_run: 12
+  time: 3.842290163040161
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 136
+    operator: COI
+  number: 23
+  status: survived
+  tests_run: 12
+  time: 3.3351356983184814
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 145
+    operator: COI
+  number: 24
+  status: survived
+  tests_run: 12
+  time: 3.1606433391571045
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 147
+    operator: COI
+  number: 25
+  status: survived
+  tests_run: 12
+  time: 3.3426425457000732
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 158
+    operator: COI
+  number: 26
+  status: survived
+  tests_run: 12
+  time: 3.0579769611358643
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 161
+    operator: COI
+  number: 27
+  status: survived
+  tests_run: 12
+  time: 3.2355237007141113
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 153
+    operator: EHD
+  number: 28
+  status: survived
+  tests_run: 12
+  time: 3.4412992000579834
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 153
+    operator: EXS
+  number: 29
+  status: survived
+  tests_run: 12
+  time: 4.128882169723511
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 108
+    operator: LCR
+  number: 30
+  status: survived
+  tests_run: 12
+  time: 3.0848231315612793
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 136
+    operator: LCR
+  number: 31
+  status: survived
+  tests_run: 12
+  time: 3.000112295150757
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 161
+    operator: LCR
+  number: 32
+  status: survived
+  tests_run: 12
+  time: 3.3425309658050537
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 108
+    operator: ROR
+  number: 33
+  status: survived
+  tests_run: 12
+  time: 3.2388038635253906
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 112
+    operator: ROR
+  number: 34
+  status: survived
+  tests_run: 12
+  time: 3.3458144664764404
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 116
+    operator: ROR
+  number: 35
+  status: survived
+  tests_run: 12
+  time: 3.173318386077881
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 161
+    operator: ROR
+  number: 36
+  status: survived
+  tests_run: 12
+  time: 2.894162654876709
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 129
+    operator: SIR
+  number: 37
+  status: survived
+  tests_run: 12
+  time: 2.972352981567383
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 133
+    operator: SIR
+  number: 38
+  status: survived
+  tests_run: 12
+  time: 2.951704263687134
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgedfs
+  mutations:
+  - lineno: 133
+    operator: SIR
+  number: 39
+  status: survived
+  tests_run: 12
+  time: 2.9558191299438477
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 131
+    operator: AOD
+  number: 40
+  status: survived
+  tests_run: 12
+  time: 3.432072401046753
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 146
+    operator: AOD
+  number: 41
+  status: survived
+  tests_run: 12
+  time: 3.335486650466919
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 113
+    operator: AOR
+  number: 42
+  status: survived
+  tests_run: 12
+  time: 3.1989006996154785
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 117
+    operator: AOR
+  number: 43
+  status: survived
+  tests_run: 12
+  time: 3.185643196105957
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 121
+    operator: AOR
+  number: 44
+  status: survived
+  tests_run: 12
+  time: 3.0711610317230225
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 123
+    operator: AOR
+  number: 45
+  status: survived
+  tests_run: 12
+  time: 3.1520450115203857
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 131
+    operator: AOR
+  number: 46
+  status: survived
+  tests_run: 12
+  time: 2.9968485832214355
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 135
+    operator: AOR
+  number: 47
+  status: survived
+  tests_run: 12
+  time: 2.954580307006836
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 146
+    operator: AOR
+  number: 48
+  status: survived
+  tests_run: 12
+  time: 3.010817527770996
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 98
+    operator: COD
+  number: 49
+  status: survived
+  tests_run: 12
+  time: 2.87162709236145
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 110
+    operator: COD
+  number: 50
+  status: survived
+  tests_run: 12
+  time: 2.9115538597106934
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 150
+    operator: COD
+  number: 51
+  status: survived
+  tests_run: 12
+  time: 3.2682225704193115
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 154
+    operator: COD
+  number: 52
+  status: survived
+  tests_run: 12
+  time: 3.2790887355804443
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 98
+    operator: COI
+  number: 53
+  status: survived
+  tests_run: 12
+  time: 3.2836694717407227
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 103
+    operator: COI
+  number: 54
+  status: survived
+  tests_run: 12
+  time: 3.3976011276245117
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 107
+    operator: COI
+  number: 55
+  status: survived
+  tests_run: 12
+  time: 2.9371836185455322
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 110
+    operator: COI
+  number: 56
+  status: survived
+  tests_run: 12
+  time: 2.886107921600342
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 114
+    operator: COI
+  number: 57
+  status: survived
+  tests_run: 12
+  time: 2.8946456909179688
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 118
+    operator: COI
+  number: 58
+  status: survived
+  tests_run: 12
+  time: 2.883350372314453
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 127
+    operator: COI
+  number: 59
+  status: survived
+  tests_run: 12
+  time: 2.943519115447998
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 137
+    operator: COI
+  number: 60
+  status: survived
+  tests_run: 12
+  time: 2.9550673961639404
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 143
+    operator: COI
+  number: 61
+  status: survived
+  tests_run: 12
+  time: 2.9029698371887207
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 146
+    operator: COI
+  number: 62
+  status: survived
+  tests_run: 12
+  time: 2.9183688163757324
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 150
+    operator: COI
+  number: 63
+  status: survived
+  tests_run: 12
+  time: 2.9067957401275635
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 154
+    operator: COI
+  number: 64
+  status: survived
+  tests_run: 12
+  time: 3.325803279876709
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 110
+    operator: LCR
+  number: 65
+  status: survived
+  tests_run: 12
+  time: 3.3538460731506348
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 137
+    operator: LCR
+  number: 66
+  status: survived
+  tests_run: 12
+  time: 3.347567081451416
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 146
+    operator: LCR
+  number: 67
+  status: survived
+  tests_run: 12
+  time: 3.417309284210205
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 110
+    operator: ROR
+  number: 68
+  status: survived
+  tests_run: 12
+  time: 3.1318297386169434
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 114
+    operator: ROR
+  number: 69
+  status: survived
+  tests_run: 12
+  time: 2.91257905960083
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 118
+    operator: ROR
+  number: 70
+  status: survived
+  tests_run: 12
+  time: 2.875542402267456
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 146
+    operator: ROR
+  number: 71
+  status: survived
+  tests_run: 12
+  time: 3.2051730155944824
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 131
+    operator: SIR
+  number: 72
+  status: survived
+  tests_run: 12
+  time: 2.9073233604431152
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 135
+    operator: SIR
+  number: 73
+  status: survived
+  tests_run: 12
+  time: 2.871710777282715
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.traversal.edgebfs
+  mutations:
+  - lineno: 135
+    operator: SIR
+  number: 74
+  status: survived
+  tests_run: 12
+  time: 2.896454095840454
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 70
+    operator: AOD
+  number: 75
+  status: survived
+  tests_run: 12
+  time: 2.880824565887451
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 74
+    operator: AOD
+  number: 76
+  status: survived
+  tests_run: 12
+  time: 2.913198709487915
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 157
+    operator: AOD
+  number: 77
+  status: survived
+  tests_run: 12
+  time: 2.8755240440368652
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 170
+    operator: AOD
+  number: 78
+  status: survived
+  tests_run: 12
+  time: 2.868720769882202
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 241
+    operator: AOD
+  number: 79
+  status: survived
+  tests_run: 12
+  time: 2.893771171569824
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 70
+    operator: AOR
+  number: 80
+  status: survived
+  tests_run: 12
+  time: 3.4331183433532715
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 74
+    operator: AOR
+  number: 81
+  status: survived
+  tests_run: 12
+  time: 3.4672658443450928
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 74
+    operator: AOR
+  number: 82
+  status: survived
+  tests_run: 12
+  time: 3.484926462173462
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 74
+    operator: AOR
+  number: 83
+  status: survived
+  tests_run: 12
+  time: 3.525451898574829
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 74
+    operator: AOR
+  number: 84
+  status: survived
+  tests_run: 12
+  time: 3.0276081562042236
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 79
+    operator: AOR
+  number: 85
+  status: survived
+  tests_run: 12
+  time: 2.947073221206665
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 157
+    operator: AOR
+  number: 86
+  status: survived
+  tests_run: 12
+  time: 2.8922054767608643
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 159
+    operator: AOR
+  number: 87
+  status: survived
+  tests_run: 12
+  time: 2.863170623779297
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 159
+    operator: AOR
+  number: 88
+  status: survived
+  tests_run: 12
+  time: 2.8514950275421143
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 159
+    operator: AOR
+  number: 89
+  status: survived
+  tests_run: 12
+  time: 2.8775665760040283
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 164
+    operator: AOR
+  number: 90
+  status: survived
+  tests_run: 12
+  time: 2.873124837875366
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 170
+    operator: AOR
+  number: 91
+  status: survived
+  tests_run: 12
+  time: 2.9150733947753906
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 172
+    operator: AOR
+  number: 92
+  status: survived
+  tests_run: 12
+  time: 2.8942885398864746
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 172
+    operator: AOR
+  number: 93
+  status: survived
+  tests_run: 12
+  time: 2.8867547512054443
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 172
+    operator: AOR
+  number: 94
+  status: survived
+  tests_run: 12
+  time: 2.9755663871765137
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 177
+    operator: AOR
+  number: 95
+  status: survived
+  tests_run: 12
+  time: 2.923771619796753
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 241
+    operator: AOR
+  number: 96
+  status: survived
+  tests_run: 12
+  time: 2.905830144882202
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 250
+    operator: AOR
+  number: 97
+  status: survived
+  tests_run: 12
+  time: 2.9267735481262207
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 250
+    operator: AOR
+  number: 98
+  status: survived
+  tests_run: 12
+  time: 2.8949034214019775
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 250
+    operator: AOR
+  number: 99
+  status: survived
+  tests_run: 12
+  time: 3.5454177856445312
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 255
+    operator: AOR
+  number: 100
+  status: survived
+  tests_run: 12
+  time: 3.5892956256866455
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 259
+    operator: AOR
+  number: 101
+  status: survived
+  tests_run: 12
+  time: 3.6834826469421387
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 259
+    operator: AOR
+  number: 102
+  status: survived
+  tests_run: 12
+  time: 3.6167147159576416
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 259
+    operator: AOR
+  number: 103
+  status: survived
+  tests_run: 12
+  time: 3.694622278213501
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 264
+    operator: AOR
+  number: 104
+  status: survived
+  tests_run: 12
+  time: 2.928197145462036
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 292
+    operator: AOR
+  number: 105
+  status: survived
+  tests_run: 12
+  time: 2.9411473274230957
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 292
+    operator: AOR
+  number: 106
+  status: survived
+  tests_run: 12
+  time: 2.9078614711761475
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 292
+    operator: AOR
+  number: 107
+  status: survived
+  tests_run: 12
+  time: 2.907439708709717
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 298
+    operator: AOR
+  number: 108
+  status: survived
+  tests_run: 12
+  time: 2.917180299758911
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 298
+    operator: AOR
+  number: 109
+  status: survived
+  tests_run: 12
+  time: 2.9328839778900146
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 298
+    operator: AOR
+  number: 110
+  status: survived
+  tests_run: 12
+  time: 2.896089792251587
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 77
+    operator: BCR
+  number: 111
+  status: survived
+  tests_run: 12
+  time: 2.9326703548431396
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 162
+    operator: BCR
+  number: 112
+  status: survived
+  tests_run: 12
+  time: 3.310434103012085
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 175
+    operator: BCR
+  number: 113
+  status: survived
+  tests_run: 12
+  time: 3.285573959350586
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 253
+    operator: BCR
+  number: 114
+  status: survived
+  tests_run: 12
+  time: 2.8574867248535156
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 262
+    operator: BCR
+  number: 115
+  status: survived
+  tests_run: 12
+  time: 2.8579142093658447
+- exception_traceback: "Traceback (most recent call last):\n  File \"./tests/test_algos.py\"\
+    , line 157, in test_prim\n    plst = list(followup)\n  File \"networkx.algorithms.tree.mst\"\
+    , line 286, in prim_mst_edges\nValueError: list.remove(x): x not in list\n"
+  killer: test_prim (tests.test_algos.TestMR2)
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 272
+    operator: BCR
+  number: 116
+  status: killed
+  tests_run: 8
+  time: 1.3268532752990723
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 290
+    operator: BCR
+  number: 117
+  status: survived
+  tests_run: 12
+  time: 2.876072645187378
+- exception_traceback: "Traceback (most recent call last):\n  File \"./tests/test_algos.py\"\
+    , line 101, in test_prim\n    self.assertGreaterEqual(len(list(primary)), len(list(followup)))\n\
+    \  File \"networkx.algorithms.tree.mst\", line 286, in prim_mst_edges\nValueError:\
+    \ list.remove(x): x not in list\n"
+  killer: test_prim (tests.test_algos.TestMR1)
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 297
+    operator: BCR
+  number: 118
+  status: killed
+  tests_run: 4
+  time: 0.18599176406860352
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 75
+    operator: COI
+  number: 119
+  status: survived
+  tests_run: 12
+  time: 2.8112707138061523
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 76
+    operator: COI
+  number: 120
+  status: survived
+  tests_run: 12
+  time: 2.815969944000244
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 80
+    operator: COI
+  number: 121
+  status: survived
+  tests_run: 12
+  time: 2.8330745697021484
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 91
+    operator: COI
+  number: 122
+  status: survived
+  tests_run: 12
+  time: 2.832710027694702
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 115
+    operator: COI
+  number: 123
+  status: survived
+  tests_run: 12
+  time: 3.613776683807373
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 116
+    operator: COI
+  number: 124
+  status: survived
+  tests_run: 12
+  time: 3.647355318069458
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 153
+    operator: COI
+  number: 125
+  status: incompetent
+  tests_run: 12
+  time: 3.444469451904297
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 160
+    operator: COI
+  number: 126
+  status: survived
+  tests_run: 12
+  time: 3.7718164920806885
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 161
+    operator: COI
+  number: 127
+  status: survived
+  tests_run: 12
+  time: 3.749650716781616
+- exception_traceback: "Traceback (most recent call last):\n  File \"./tests/test_algos.py\"\
+    , line 118, in test__kruskal\n    self.assertGreaterEqual(len(list(primary)),\
+    \ len(list(followup)))\n  File \"networkx.algorithms.tree.mst\", line 179, in\
+    \ kruskal_mst_edges\n  File \"networkx.algorithms.tree.mst\", line 177, in filter_nan_edges\n\
+    ValueError: NaN found as an edge weight. Edge (0, 1, {'weight': 42})\n"
+  killer: test__kruskal (tests.test_algos.TestMR1)
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 173
+    operator: COI
+  number: 128
+  status: killed
+  tests_run: 1
+  time: 0.05733847618103027
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 174
+    operator: COI
+  number: 129
+  status: survived
+  tests_run: 12
+  time: 2.878366708755493
+- exception_traceback: "Traceback (most recent call last):\n  File \"./tests/test_algos.py\"\
+    , line 118, in test__kruskal\n    self.assertGreaterEqual(len(list(primary)),\
+    \ len(list(followup)))\n  File \"networkx.algorithms.tree.mst\", line 182, in\
+    \ kruskal_mst_edges\nValueError: not enough values to unpack (expected 5, got\
+    \ 4)\n"
+  killer: test__kruskal (tests.test_algos.TestMR1)
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 181
+    operator: COI
+  number: 130
+  status: killed
+  tests_run: 1
+  time: 0.06031990051269531
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 183
+    operator: COI
+  number: 131
+  status: survived
+  tests_run: 12
+  time: 2.8025641441345215
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 184
+    operator: COI
+  number: 132
+  status: survived
+  tests_run: 12
+  time: 2.802450656890869
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 185
+    operator: COI
+  number: 133
+  status: survived
+  tests_run: 12
+  time: 2.8102457523345947
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 190
+    operator: COI
+  number: 134
+  status: survived
+  tests_run: 12
+  time: 2.973729133605957
+- exception_traceback: "Traceback (most recent call last):\n  File \"./tests/test_algos.py\"\
+    , line 169, in test__kruskal\n    self.assertEqual((len(flst) + 1), len(plst))\n\
+    AssertionError: 1 != 0\n"
+  killer: test__kruskal (tests.test_algos.TestMR2)
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 197
+    operator: COI
+  number: 135
+  status: killed
+  tests_run: 5
+  time: 0.5396866798400879
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 198
+    operator: COI
+  number: 136
+  status: survived
+  tests_run: 12
+  time: 3.196601629257202
+- exception_traceback: "Traceback (most recent call last):\n  File \"./tests/test_algos.py\"\
+    , line 159, in test_prim\n    self.assertEqual((len(flst) + 1), len(plst))\nAssertionError:\
+    \ 1 != 0\n"
+  killer: test_prim (tests.test_algos.TestMR2)
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 243
+    operator: COI
+  number: 137
+  status: killed
+  tests_run: 8
+  time: 1.518291711807251
+- exception_traceback: "Traceback (most recent call last):\n  File \"./tests/test_algos.py\"\
+    , line 101, in test_prim\n    self.assertGreaterEqual(len(list(primary)), len(list(followup)))\n\
+    \  File \"networkx.algorithms.tree.mst\", line 250, in prim_mst_edges\nAttributeError:\
+    \ 'int' object has no attribute 'get'\n"
+  killer: test_prim (tests.test_algos.TestMR1)
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 247
+    operator: COI
+  number: 138
+  status: killed
+  tests_run: 4
+  time: 0.18349099159240723
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 251
+    operator: COI
+  number: 139
+  status: survived
+  tests_run: 12
+  time: 2.975212574005127
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 252
+    operator: COI
+  number: 140
+  status: survived
+  tests_run: 12
+  time: 2.823272705078125
+- exception_traceback: "Traceback (most recent call last):\n  File \"./tests/test_algos.py\"\
+    , line 101, in test_prim\n    self.assertGreaterEqual(len(list(primary)), len(list(followup)))\n\
+    \  File \"networkx.algorithms.tree.mst\", line 264, in prim_mst_edges\nValueError:\
+    \ NaN found as an edge weight. Edge (0, 1, {'weight': 42})\n"
+  killer: test_prim (tests.test_algos.TestMR1)
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 260
+    operator: COI
+  number: 141
+  status: killed
+  tests_run: 4
+  time: 0.17548632621765137
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 261
+    operator: COI
+  number: 142
+  status: survived
+  tests_run: 12
+  time: 2.8150298595428467
+- exception_traceback: "Traceback (most recent call last):\n  File \"./tests/test_algos.py\"\
+    , line 159, in test_prim\n    self.assertEqual((len(flst) + 1), len(plst))\nAssertionError:\
+    \ 1 != 0\n"
+  killer: test_prim (tests.test_algos.TestMR2)
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 266
+    operator: COI
+  number: 143
+  status: killed
+  tests_run: 8
+  time: 1.301640510559082
+- exception_traceback: "Traceback (most recent call last):\n  File \"./tests/test_algos.py\"\
+    , line 101, in test_prim\n    self.assertGreaterEqual(len(list(primary)), len(list(followup)))\n\
+    \  File \"networkx.algorithms.tree.mst\", line 268, in prim_mst_edges\nValueError:\
+    \ not enough values to unpack (expected 6, got 5)\n"
+  killer: test_prim (tests.test_algos.TestMR1)
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 267
+    operator: COI
+  number: 144
+  status: killed
+  tests_run: 4
+  time: 0.1790175437927246
+- exception_traceback: "Traceback (most recent call last):\n  File \"./tests/test_algos.py\"\
+    , line 159, in test_prim\n    self.assertEqual((len(flst) + 1), len(plst))\nAssertionError:\
+    \ 1 != 0\n"
+  killer: test_prim (tests.test_algos.TestMR2)
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 271
+    operator: COI
+  number: 145
+  status: killed
+  tests_run: 8
+  time: 1.309394121170044
+- exception_traceback: "Traceback (most recent call last):\n  File \"./tests/test_algos.py\"\
+    , line 159, in test_prim\n    self.assertEqual((len(flst) + 1), len(plst))\nAssertionError:\
+    \ 1 != 0\n"
+  killer: test_prim (tests.test_algos.TestMR2)
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 271
+    operator: COI
+  number: 146
+  status: killed
+  tests_run: 8
+  time: 1.3075988292694092
+- exception_traceback: "Traceback (most recent call last):\n  File \"./tests/test_algos.py\"\
+    , line 101, in test_prim\n    self.assertGreaterEqual(len(list(primary)), len(list(followup)))\n\
+    \  File \"networkx.algorithms.tree.mst\", line 278, in prim_mst_edges\nUnboundLocalError:\
+    \ local variable 'k' referenced before assignment\n"
+  killer: test_prim (tests.test_algos.TestMR1)
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 274
+    operator: COI
+  number: 147
+  status: killed
+  tests_run: 4
+  time: 0.1777501106262207
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 275
+    operator: COI
+  number: 148
+  status: survived
+  tests_run: 12
+  time: 2.8580923080444336
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 280
+    operator: COI
+  number: 149
+  status: survived
+  tests_run: 12
+  time: 2.8147459030151367
+- exception_traceback: "Traceback (most recent call last):\n  File \"./tests/test_algos.py\"\
+    , line 101, in test_prim\n    self.assertGreaterEqual(len(list(primary)), len(list(followup)))\n\
+    \  File \"networkx.algorithms.tree.mst\", line 292, in prim_mst_edges\nAttributeError:\
+    \ 'int' object has no attribute 'get'\n"
+  killer: test_prim (tests.test_algos.TestMR1)
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 287
+    operator: COI
+  number: 150
+  status: killed
+  tests_run: 4
+  time: 0.18126749992370605
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 289
+    operator: COI
+  number: 151
+  status: survived
+  tests_run: 12
+  time: 2.8598241806030273
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 289
+    operator: COI
+  number: 152
+  status: survived
+  tests_run: 12
+  time: 2.8408665657043457
+- exception_traceback: "Traceback (most recent call last):\n  File \"./tests/test_algos.py\"\
+    , line 101, in test_prim\n    self.assertGreaterEqual(len(list(primary)), len(list(followup)))\n\
+    \  File \"networkx.algorithms.tree.mst\", line 286, in prim_mst_edges\nValueError:\
+    \ list.remove(x): x not in list\n"
+  killer: test_prim (tests.test_algos.TestMR1)
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 296
+    operator: COI
+  number: 153
+  status: killed
+  tests_run: 4
+  time: 0.18281316757202148
+- exception_traceback: "Traceback (most recent call last):\n  File \"./tests/test_algos.py\"\
+    , line 101, in test_prim\n    self.assertGreaterEqual(len(list(primary)), len(list(followup)))\n\
+    \  File \"networkx.algorithms.tree.mst\", line 286, in prim_mst_edges\nValueError:\
+    \ list.remove(x): x not in list\n"
+  killer: test_prim (tests.test_algos.TestMR1)
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 296
+    operator: COI
+  number: 154
+  status: killed
+  tests_run: 4
+  time: 0.1824185848236084
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 27
+    operator: DDL
+  number: 155
+  status: survived
+  tests_run: 12
+  time: 3.9903461933135986
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 310
+    operator: DDL
+  number: 156
+  status: survived
+  tests_run: 12
+  time: 3.986396551132202
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 402
+    operator: DDL
+  number: 157
+  status: survived
+  tests_run: 12
+  time: 2.92828631401062
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 394
+    operator: EHD
+  number: 158
+  status: survived
+  tests_run: 12
+  time: 3.1056723594665527
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 485
+    operator: EHD
+  number: 159
+  status: survived
+  tests_run: 12
+  time: 3.012422561645508
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 394
+    operator: EXS
+  number: 160
+  status: survived
+  tests_run: 12
+  time: 2.931997060775757
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 485
+    operator: EXS
+  number: 161
+  status: survived
+  tests_run: 12
+  time: 2.930957794189453
+- exception_traceback: "Traceback (most recent call last):\n  File \"./tests/test_algos.py\"\
+    , line 101, in test_prim\n    self.assertGreaterEqual(len(list(primary)), len(list(followup)))\n\
+    \  File \"networkx.algorithms.tree.mst\", line 278, in prim_mst_edges\nUnboundLocalError:\
+    \ local variable 'k' referenced before assignment\n"
+  killer: test_prim (tests.test_algos.TestMR1)
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 274
+    operator: LCR
+  number: 162
+  status: killed
+  tests_run: 4
+  time: 0.18142151832580566
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 80
+    operator: ROR
+  number: 163
+  status: survived
+  tests_run: 12
+  time: 2.877708673477173
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 80
+    operator: ROR
+  number: 164
+  status: survived
+  tests_run: 12
+  time: 2.94265079498291
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 115
+    operator: ROR
+  number: 165
+  status: survived
+  tests_run: 12
+  time: 2.8668220043182373
+- exception_traceback: null
+  killer: null
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 183
+    operator: ROR
+  number: 166
+  status: survived
+  tests_run: 12
+  time: 2.8965251445770264
+- exception_traceback: "Traceback (most recent call last):\n  File \"./tests/test_algos.py\"\
+    , line 169, in test__kruskal\n    self.assertEqual((len(flst) + 1), len(plst))\n\
+    AssertionError: 1 != 0\n"
+  killer: test__kruskal (tests.test_algos.TestMR2)
+  module: networkx.algorithms.tree.mst
+  mutations:
+  - lineno: 197
+    operator: ROR
+  number: 167
+  status: killed
+  tests_run: 5
+  time: 0.4442410469055176
+number_of_tests: 12
+targets:
+- networkx.algorithms.traversal.edgedfs
+- networkx.algorithms.traversal.edgebfs
+- networkx.algorithms.tree.mst
+tests:
+- name: tests.test_algos
+  target: null
+  time: 2.866766929626465
+time_stats:
+  create_mutant_module: 0.37988734245300293
+  create_target_ast: 0.020523786544799805
+  mutate_module: 510.2460424900055
+  run_tests_with_mutant: 508.0979974269867
+total_time: 513.2732226848602
